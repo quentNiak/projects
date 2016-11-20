@@ -73,4 +73,89 @@
     <ownedEnd xmi:id="_P0UCcK86Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_P0TbYK86Eeadn8dE77Zflw"/>
     <ownedEnd xmi:id="_P0UpgK86Eeadn8dE77Zflw" type="_OmnAkK83Eeadn8dE77Zflw" association="_P0TbYK86Eeadn8dE77Zflw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_oaAzkK8_EeacjfaTn63h7Q" name="Rechercher Téléphone"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_st-jIK8_EeacjfaTn63h7Q" name="Utilisateur">
+    <eAnnotations xmi:id="_st_KMK8_EeacjfaTn63h7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_st_xQK8_EeacjfaTn63h7Q" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_5IfjEK8_EeacjfaTn63h7Q" name="Ecran Accueil" useCase="_EWmaQK9AEeacjfaTn63h7Q">
+    <ownedUseCase xmi:id="_EWmaQK9AEeacjfaTn63h7Q" name="Choisir Téléphone Cherché" subject="_5IfjEK8_EeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_SnUt4K9AEeacjfaTn63h7Q" name="Ecran Rechercher Téléphone" useCase="_limFEK9AEeacjfaTn63h7Q _21zSQK9AEeacjfaTn63h7Q _7lcRMK9AEeacjfaTn63h7Q _TU_PsK9BEeacjfaTn63h7Q _BmO8sK9GEeacjfaTn63h7Q">
+    <ownedUseCase xmi:id="_limFEK9AEeacjfaTn63h7Q" name="Afficher Ecran &quot;Rechercher Téléphone&quot;" subject="_SnUt4K9AEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_21zSQK9AEeacjfaTn63h7Q" name="Appuyer sur &quot;Faire Sonner/ Vibrer&quot; Téléphone cherché" subject="_SnUt4K9AEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_7lcRMK9AEeacjfaTn63h7Q" name="Appuyer sur &quot;Rehercher&quot; Téléphone" subject="_SnUt4K9AEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_TU_PsK9BEeacjfaTn63h7Q" name="Activer Bluetooth" subject="_SnUt4K9AEeacjfaTn63h7Q">
+      <ownedUseCase xmi:id="_26d6YK9BEeacjfaTn63h7Q" name="Activer Bluetooth"/>
+      <extend xmi:id="_dDIBkK9EEeacjfaTn63h7Q" extendedCase="_ySJEYK9BEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_ySJEYK9BEeacjfaTn63h7Q" name="Activer WIFI">
+      <extend xmi:id="_dzyCcK9EEeacjfaTn63h7Q" extendedCase="_T34E4K9CEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_3K8mYK9BEeacjfaTn63h7Q" name="Détecter Téléphone via Bluetooth"/>
+    <ownedUseCase xmi:id="_7AOO0K9BEeacjfaTn63h7Q" name="Détecter Téléphone via WIFI"/>
+    <ownedUseCase xmi:id="_9oqQsK9BEeacjfaTn63h7Q" name="Indiquer Puissance Signal Téléphone Cherché"/>
+    <ownedUseCase xmi:id="_T34E4K9CEeacjfaTn63h7Q" name="Obtenir Coordonnées GPS"/>
+    <ownedUseCase xmi:id="_Y1OvsK9CEeacjfaTn63h7Q" name="Faire Disparaître bouton &quot;Rechercher&quot;"/>
+    <ownedUseCase xmi:id="_iMbvoK9CEeacjfaTn63h7Q" name="Afficher Maps avec position du téléphone"/>
+    <ownedUseCase xmi:id="_BmO8sK9GEeacjfaTn63h7Q" name="Envoyer requête" subject="_SnUt4K9AEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_GFevMK9GEeacjfaTn63h7Q" name="Faire Sonner/ Vibrer Téléphone"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TLz-MK9EEeacjfaTn63h7Q" memberEnd="_TL0lQK9EEeacjfaTn63h7Q _TL1MUK9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_TL0lQK9EEeacjfaTn63h7Q" type="_st-jIK8_EeacjfaTn63h7Q" association="_TLz-MK9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_TL1MUK9EEeacjfaTn63h7Q" type="_EWmaQK9AEeacjfaTn63h7Q" association="_TLz-MK9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U9hMYK9EEeacjfaTn63h7Q" memberEnd="_U9hzcK9EEeacjfaTn63h7Q _U9hzca9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_U9hzcK9EEeacjfaTn63h7Q" type="_EWmaQK9AEeacjfaTn63h7Q" association="_U9hMYK9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_U9hzca9EEeacjfaTn63h7Q" type="_limFEK9AEeacjfaTn63h7Q" association="_U9hMYK9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WI2XEK9EEeacjfaTn63h7Q" memberEnd="_WI2XEa9EEeacjfaTn63h7Q _WI3lMK9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_WI2XEa9EEeacjfaTn63h7Q" type="_st-jIK8_EeacjfaTn63h7Q" association="_WI2XEK9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_WI3lMK9EEeacjfaTn63h7Q" type="_21zSQK9AEeacjfaTn63h7Q" association="_WI2XEK9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XukXsK9EEeacjfaTn63h7Q" memberEnd="_Xuk-wK9EEeacjfaTn63h7Q _XumM4K9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_Xuk-wK9EEeacjfaTn63h7Q" type="_st-jIK8_EeacjfaTn63h7Q" association="_XukXsK9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_XumM4K9EEeacjfaTn63h7Q" type="_7lcRMK9AEeacjfaTn63h7Q" association="_XukXsK9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bgZqkK9EEeacjfaTn63h7Q" memberEnd="_bgZqka9EEeacjfaTn63h7Q _bgaRoK9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_bgZqka9EEeacjfaTn63h7Q" type="_7lcRMK9AEeacjfaTn63h7Q" association="_bgZqkK9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_bgaRoK9EEeacjfaTn63h7Q" type="_TU_PsK9BEeacjfaTn63h7Q" association="_bgZqkK9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fMW-8K9EEeacjfaTn63h7Q" memberEnd="_fMW-8a9EEeacjfaTn63h7Q _fMXmAK9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_fMW-8a9EEeacjfaTn63h7Q" type="_ySJEYK9BEeacjfaTn63h7Q" association="_fMW-8K9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_fMXmAK9EEeacjfaTn63h7Q" type="_7AOO0K9BEeacjfaTn63h7Q" association="_fMW-8K9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fyYdIK9EEeacjfaTn63h7Q" memberEnd="_fyYdIa9EEeacjfaTn63h7Q _fyZEMK9EEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_fyYdIa9EEeacjfaTn63h7Q" type="_TU_PsK9BEeacjfaTn63h7Q" association="_fyYdIK9EEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_fyZEMK9EEeacjfaTn63h7Q" type="_3K8mYK9BEeacjfaTn63h7Q" association="_fyYdIK9EEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ud6oAK9FEeacjfaTn63h7Q" memberEnd="_ud7PEK9FEeacjfaTn63h7Q _ud7PEa9FEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_ud7PEK9FEeacjfaTn63h7Q" type="_3K8mYK9BEeacjfaTn63h7Q" association="_ud6oAK9FEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_ud7PEa9FEeacjfaTn63h7Q" type="_Y1OvsK9CEeacjfaTn63h7Q" association="_ud6oAK9FEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u12m4K9FEeacjfaTn63h7Q" memberEnd="_u12m4a9FEeacjfaTn63h7Q _u131AK9FEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_u12m4a9FEeacjfaTn63h7Q" type="_7AOO0K9BEeacjfaTn63h7Q" association="_u12m4K9FEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_u131AK9FEeacjfaTn63h7Q" type="_Y1OvsK9CEeacjfaTn63h7Q" association="_u12m4K9FEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vM0VYK9FEeacjfaTn63h7Q" memberEnd="_vM0VYa9FEeacjfaTn63h7Q _vM1jgK9FEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_vM0VYa9FEeacjfaTn63h7Q" type="_Y1OvsK9CEeacjfaTn63h7Q" association="_vM0VYK9FEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_vM1jgK9FEeacjfaTn63h7Q" type="_9oqQsK9BEeacjfaTn63h7Q" association="_vM0VYK9FEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JsQBkK9GEeacjfaTn63h7Q" memberEnd="_JsQBka9GEeacjfaTn63h7Q _JsQBkq9GEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_JsQBka9GEeacjfaTn63h7Q" type="_21zSQK9AEeacjfaTn63h7Q" association="_JsQBkK9GEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_JsQBkq9GEeacjfaTn63h7Q" type="_BmO8sK9GEeacjfaTn63h7Q" association="_JsQBkK9GEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KLCPUK9GEeacjfaTn63h7Q" memberEnd="_KLC2YK9GEeacjfaTn63h7Q _KLErkK9GEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_KLC2YK9GEeacjfaTn63h7Q" type="_BmO8sK9GEeacjfaTn63h7Q" association="_KLCPUK9GEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_KLErkK9GEeacjfaTn63h7Q" type="_GFevMK9GEeacjfaTn63h7Q" association="_KLCPUK9GEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M6uvwK9GEeacjfaTn63h7Q" memberEnd="_M6vW0K9GEeacjfaTn63h7Q _M6vW0a9GEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_M6vW0K9GEeacjfaTn63h7Q" type="_T34E4K9CEeacjfaTn63h7Q" association="_M6uvwK9GEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_M6vW0a9GEeacjfaTn63h7Q" type="_Y1OvsK9CEeacjfaTn63h7Q" association="_M6uvwK9GEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SQWwoK9GEeacjfaTn63h7Q" memberEnd="_SQWwoa9GEeacjfaTn63h7Q _SQXXsK9GEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_SQWwoa9GEeacjfaTn63h7Q" type="_Y1OvsK9CEeacjfaTn63h7Q" association="_SQWwoK9GEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_SQXXsK9GEeacjfaTn63h7Q" type="_iMbvoK9CEeacjfaTn63h7Q" association="_SQWwoK9GEeacjfaTn63h7Q"/>
+  </packagedElement>
 </uml:Model>
