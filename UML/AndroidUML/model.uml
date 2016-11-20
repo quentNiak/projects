@@ -22,7 +22,7 @@
     <ownedUseCase xmi:id="_i6AvsK80Eeadn8dE77Zflw" name="Ajouter Nom" subject="_dpJTAK80Eeadn8dE77Zflw">
       <extend xmi:id="_1c638K85Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
     </ownedUseCase>
-    <ownedUseCase xmi:id="_kPAMsK80Eeadn8dE77Zflw" name="Ajouter Téléphone">
+    <ownedUseCase xmi:id="_kPAMsK80Eeadn8dE77Zflw" name="Ajouter Numéro Téléphone">
       <ownedUseCase xmi:id="_k72EkK80Eeadn8dE77Zflw" name="UseCase1"/>
       <extend xmi:id="_2WI-8K85Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
     </ownedUseCase>
@@ -96,7 +96,7 @@
     <ownedUseCase xmi:id="_3K8mYK9BEeacjfaTn63h7Q" name="Détecter Téléphone via Bluetooth"/>
     <ownedUseCase xmi:id="_7AOO0K9BEeacjfaTn63h7Q" name="Détecter Téléphone via WIFI"/>
     <ownedUseCase xmi:id="_9oqQsK9BEeacjfaTn63h7Q" name="Indiquer Puissance Signal Téléphone Cherché"/>
-    <ownedUseCase xmi:id="_T34E4K9CEeacjfaTn63h7Q" name="Obtenir Coordonnées GPS"/>
+    <ownedUseCase xmi:id="_T34E4K9CEeacjfaTn63h7Q" name="Obtenir Coordonnées GPS Téléphone cherché"/>
     <ownedUseCase xmi:id="_Y1OvsK9CEeacjfaTn63h7Q" name="Faire Disparaître bouton &quot;Rechercher&quot;"/>
     <ownedUseCase xmi:id="_iMbvoK9CEeacjfaTn63h7Q" name="Afficher Maps avec position du téléphone"/>
     <ownedUseCase xmi:id="_BmO8sK9GEeacjfaTn63h7Q" name="Envoyer requête" subject="_SnUt4K9AEeacjfaTn63h7Q"/>
@@ -157,5 +157,99 @@
   <packagedElement xmi:type="uml:Association" xmi:id="_SQWwoK9GEeacjfaTn63h7Q" memberEnd="_SQWwoa9GEeacjfaTn63h7Q _SQXXsK9GEeacjfaTn63h7Q">
     <ownedEnd xmi:id="_SQWwoa9GEeacjfaTn63h7Q" type="_Y1OvsK9CEeacjfaTn63h7Q" association="_SQWwoK9GEeacjfaTn63h7Q"/>
     <ownedEnd xmi:id="_SQXXsK9GEeacjfaTn63h7Q" type="_iMbvoK9CEeacjfaTn63h7Q" association="_SQWwoK9GEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_V__HQK9KEeacjfaTn63h7Q" name="Gérer Contacts"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_c1UnYK9KEeacjfaTn63h7Q" name="Utilisateur">
+    <eAnnotations xmi:id="_c1UnYa9KEeacjfaTn63h7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_c1UnYq9KEeacjfaTn63h7Q" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_tQqjAK9LEeacjfaTn63h7Q" name="Ecran Accueil" useCase="_vDrjUK9MEeacjfaTn63h7Q">
+    <ownedUseCase xmi:id="_vDrjUK9MEeacjfaTn63h7Q" name="Appuyer sur &quot;Gérer Contacts&quot;" subject="_tQqjAK9LEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_yDWSEK9PEeacjfaTn63h7Q" name="Mettre à jour liste Contacts dans &quot;Ecran Accueil&quot;"/>
+    <ownedUseCase xmi:id="_7qEfQK9QEeacjfaTn63h7Q" name="Retour dans &quot;Ecran Accueil&quot;"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_yuhS0K9LEeacjfaTn63h7Q" name="Ecran Gérer Contacts" useCase="_N7x44K9NEeacjfaTn63h7Q _n6TQYK9NEeacjfaTn63h7Q _iKDBoK9QEeacjfaTn63h7Q">
+    <ownedUseCase xmi:id="_N7x44K9NEeacjfaTn63h7Q" name="Appuyer sur &quot;Modifier&quot; Contact" subject="_yuhS0K9LEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_R9-jAK9NEeacjfaTn63h7Q" name="Appuyer sur &quot;Supprimer&quot; Contacts"/>
+    <ownedUseCase xmi:id="_n6TQYK9NEeacjfaTn63h7Q" name="Sélectionner/ Désélectionner Contact" subject="_yuhS0K9LEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_v8vc0K9NEeacjfaTn63h7Q" name="Ajouter/Retirer Contact"/>
+    <ownedUseCase xmi:id="_bL_8UK9OEeacjfaTn63h7Q" name="Afficher Ecran &quot;Gérer Contacts&quot;"/>
+    <ownedUseCase xmi:id="_iKDBoK9QEeacjfaTn63h7Q" name="Appuyer sur &quot;Annuler&quot;" subject="_yuhS0K9LEeacjfaTn63h7Q"/>
+    <ownedUseCase xmi:id="_CLXpEK9REeacjfaTn63h7Q" name="Retour dans &quot;Ecran Gérer Contacts&quot;"/>
+    <ownedUseCase xmi:id="_R_u5sK9REeacjfaTn63h7Q" name="Mettre à jour Contact"/>
+    <ownedUseCase xmi:id="_rRIFcK9REeacjfaTn63h7Q" name="Mettre à jour Liste de Contacts dans &quot;Ecran Gérer Contact&quot;"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_e5hB0K9MEeacjfaTn63h7Q" name="Ecran Ajouter Contact" useCase="_B_KD8K9PEeacjfaTn63h7Q">
+    <ownedUseCase xmi:id="_B_KD8K9PEeacjfaTn63h7Q" name="Modifier Nom" subject="_e5hB0K9MEeacjfaTn63h7Q">
+      <ownedUseCase xmi:id="_KepYwK9PEeacjfaTn63h7Q" name="Ajouter/Retirer Contact"/>
+      <extend xmi:id="_vwg3UK9QEeacjfaTn63h7Q" extendedCase="_N7x44K9NEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_Kw2jEK9PEeacjfaTn63h7Q" name="Modifier Numéro Téléphone">
+      <extend xmi:id="_wb-2MK9QEeacjfaTn63h7Q" extendedCase="_N7x44K9NEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_MiSrgK9PEeacjfaTn63h7Q" name="Modifier Email">
+      <extend xmi:id="_xdeIYK9QEeacjfaTn63h7Q" extendedCase="_N7x44K9NEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_ONVRAK9PEeacjfaTn63h7Q" name="Modifier réseau WIFI">
+      <extend xmi:id="_yPWRQK9QEeacjfaTn63h7Q" extendedCase="_N7x44K9NEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_RQya8K9PEeacjfaTn63h7Q" name="Modifier Réseau Bluetooth">
+      <extend xmi:id="_zk6WAK9QEeacjfaTn63h7Q" extendedCase="_N7x44K9NEeacjfaTn63h7Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_SwAyAK9PEeacjfaTn63h7Q" name="Appuyer sur &quot;Modifier&quot;"/>
+    <ownedUseCase xmi:id="_UEw-cK9PEeacjfaTn63h7Q" name="Appuyer sur &quot;Annuler&quot;"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-uqHEK9PEeacjfaTn63h7Q" memberEnd="_-uqHEa9PEeacjfaTn63h7Q _-uquIK9PEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_-uqHEa9PEeacjfaTn63h7Q" type="_c1UnYK9KEeacjfaTn63h7Q" association="_-uqHEK9PEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_-uquIK9PEeacjfaTn63h7Q" type="_vDrjUK9MEeacjfaTn63h7Q" association="_-uqHEK9PEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AJcqEK9QEeacjfaTn63h7Q" memberEnd="_AJcqEa9QEeacjfaTn63h7Q _AJefQK9QEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_AJcqEa9QEeacjfaTn63h7Q" type="_vDrjUK9MEeacjfaTn63h7Q" association="_AJcqEK9QEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_AJefQK9QEeacjfaTn63h7Q" type="_bL_8UK9OEeacjfaTn63h7Q" association="_AJcqEK9QEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LHY-UK9QEeacjfaTn63h7Q" memberEnd="_LHZlYK9QEeacjfaTn63h7Q _LHZlYa9QEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_LHZlYK9QEeacjfaTn63h7Q" type="_c1UnYK9KEeacjfaTn63h7Q" association="_LHY-UK9QEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_LHZlYa9QEeacjfaTn63h7Q" type="_n6TQYK9NEeacjfaTn63h7Q" association="_LHY-UK9QEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_N5vKIK9QEeacjfaTn63h7Q" memberEnd="_N5vKIa9QEeacjfaTn63h7Q _N5vxMK9QEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_N5vKIa9QEeacjfaTn63h7Q" type="_c1UnYK9KEeacjfaTn63h7Q" association="_N5vKIK9QEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_N5vxMK9QEeacjfaTn63h7Q" type="_v8vc0K9NEeacjfaTn63h7Q" association="_N5vKIK9QEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nVM34K9QEeacjfaTn63h7Q" memberEnd="_nVNe8K9QEeacjfaTn63h7Q _nVNe8a9QEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_nVNe8K9QEeacjfaTn63h7Q" type="_n6TQYK9NEeacjfaTn63h7Q" association="_nVM34K9QEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_nVNe8a9QEeacjfaTn63h7Q" type="_N7x44K9NEeacjfaTn63h7Q" association="_nVM34K9QEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ocFncK9QEeacjfaTn63h7Q" memberEnd="_ocFnca9QEeacjfaTn63h7Q _ocHcoK9QEeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_ocFnca9QEeacjfaTn63h7Q" type="_n6TQYK9NEeacjfaTn63h7Q" association="_ocFncK9QEeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_ocHcoK9QEeacjfaTn63h7Q" type="_R9-jAK9NEeacjfaTn63h7Q" association="_ocFncK9QEeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JfR7kK9REeacjfaTn63h7Q" memberEnd="_JfR7ka9REeacjfaTn63h7Q _JfSioK9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_JfR7ka9REeacjfaTn63h7Q" type="_UEw-cK9PEeacjfaTn63h7Q" association="_JfR7kK9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_JfSioK9REeacjfaTn63h7Q" type="_CLXpEK9REeacjfaTn63h7Q" association="_JfR7kK9REeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MC2rkK9REeacjfaTn63h7Q" memberEnd="_MC3SoK9REeacjfaTn63h7Q _MC3Soa9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_MC3SoK9REeacjfaTn63h7Q" type="_iKDBoK9QEeacjfaTn63h7Q" association="_MC2rkK9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_MC3Soa9REeacjfaTn63h7Q" type="_7qEfQK9QEeacjfaTn63h7Q" association="_MC2rkK9REeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nFkrAK9REeacjfaTn63h7Q" memberEnd="_nFlSEK9REeacjfaTn63h7Q _nFlSEa9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_nFlSEK9REeacjfaTn63h7Q" type="_SwAyAK9PEeacjfaTn63h7Q" association="_nFkrAK9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_nFlSEa9REeacjfaTn63h7Q" type="_R_u5sK9REeacjfaTn63h7Q" association="_nFkrAK9REeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1MF5wK9REeacjfaTn63h7Q" memberEnd="_1MGg0K9REeacjfaTn63h7Q _1MGg0a9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_1MGg0K9REeacjfaTn63h7Q" type="_SwAyAK9PEeacjfaTn63h7Q" association="_1MF5wK9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_1MGg0a9REeacjfaTn63h7Q" type="_rRIFcK9REeacjfaTn63h7Q" association="_1MF5wK9REeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3bqIoK9REeacjfaTn63h7Q" memberEnd="_3bqIoa9REeacjfaTn63h7Q _3bqvsK9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_3bqIoa9REeacjfaTn63h7Q" type="_R9-jAK9NEeacjfaTn63h7Q" association="_3bqIoK9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_3bqvsK9REeacjfaTn63h7Q" type="_rRIFcK9REeacjfaTn63h7Q" association="_3bqIoK9REeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5i8lQK9REeacjfaTn63h7Q" memberEnd="_5i8lQa9REeacjfaTn63h7Q _5i8lQq9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_5i8lQa9REeacjfaTn63h7Q" type="_yDWSEK9PEeacjfaTn63h7Q" association="_5i8lQK9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_5i8lQq9REeacjfaTn63h7Q" type="_rRIFcK9REeacjfaTn63h7Q" association="_5i8lQK9REeacjfaTn63h7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8Hio8K9REeacjfaTn63h7Q" memberEnd="_8Hio8a9REeacjfaTn63h7Q _8Hj3EK9REeacjfaTn63h7Q">
+    <ownedEnd xmi:id="_8Hio8a9REeacjfaTn63h7Q" type="_yDWSEK9PEeacjfaTn63h7Q" association="_8Hio8K9REeacjfaTn63h7Q"/>
+    <ownedEnd xmi:id="_8Hj3EK9REeacjfaTn63h7Q" type="_R_u5sK9REeacjfaTn63h7Q" association="_8Hio8K9REeacjfaTn63h7Q"/>
   </packagedElement>
 </uml:Model>
