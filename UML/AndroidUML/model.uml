@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_gWEowK8zEeadn8dE77Zflw" name="NewModel">
+  <packagedElement xmi:type="uml:Component" xmi:id="_AEGgwK80Eeadn8dE77Zflw" name="Ajouter Contact" useCase="_m95J8K82Eeadn8dE77Zflw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_m95J8K82Eeadn8dE77Zflw" name="Récupérer Données Contact" subject="_AEGgwK80Eeadn8dE77Zflw">
+      <extend xmi:id="_va6SMK85Eeadn8dE77Zflw" extendedCase="_ooi_0K80Eeadn8dE77Zflw"/>
+      <include xmi:id="_IPwr4K86Eeadn8dE77Zflw" addition="_dGg_sK83Eeadn8dE77Zflw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_D43L0K80Eeadn8dE77Zflw" name="Utilisateur">
+    <eAnnotations xmi:id="_D45BAK80Eeadn8dE77Zflw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_D45BAa80Eeadn8dE77Zflw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Gsz6IK80Eeadn8dE77Zflw" name="Ecran Accueil" useCase="_SGQeoK80Eeadn8dE77Zflw _dGg_sK83Eeadn8dE77Zflw _wezKYK80Eeadn8dE77Zflw">
+    <ownedUseCase xmi:id="_SGQeoK80Eeadn8dE77Zflw" name="Appuyer sur &quot;Ajouter&quot;" subject="_Gsz6IK80Eeadn8dE77Zflw">
+      <include xmi:id="_hDdrgK85Eeadn8dE77Zflw" addition="_TlACoK82Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_dGg_sK83Eeadn8dE77Zflw" name="Ajouter Contact créé à l'Ecran Accueil" subject="_Gsz6IK80Eeadn8dE77Zflw"/>
+    <ownedUseCase xmi:id="_wezKYK80Eeadn8dE77Zflw" name="Revenir à l'écran d'accueil" subject="_Gsz6IK80Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_dpJTAK80Eeadn8dE77Zflw" name="Ecran Ajouter Contact" useCase="_i6AvsK80Eeadn8dE77Zflw _OmnAkK83Eeadn8dE77Zflw _TlACoK82Eeadn8dE77Zflw">
+    <ownedUseCase xmi:id="_i6AvsK80Eeadn8dE77Zflw" name="Ajouter Nom" subject="_dpJTAK80Eeadn8dE77Zflw">
+      <extend xmi:id="_1c638K85Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_kPAMsK80Eeadn8dE77Zflw" name="Ajouter Téléphone">
+      <ownedUseCase xmi:id="_k72EkK80Eeadn8dE77Zflw" name="UseCase1"/>
+      <extend xmi:id="_2WI-8K85Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_lMCcsK80Eeadn8dE77Zflw" name="Ajouter Email">
+      <extend xmi:id="_4A9iAK85Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_lxc24K80Eeadn8dE77Zflw" name="Ajouter réseau Wifi">
+      <extend xmi:id="_59bOsK85Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_mRoy0K80Eeadn8dE77Zflw" name="Ajouter réseau Bluetooth">
+      <extend xmi:id="_AxCQgK86Eeadn8dE77Zflw" extendedCase="_m95J8K82Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_ooi_0K80Eeadn8dE77Zflw" name="Créer Contact"/>
+    <ownedUseCase xmi:id="_OmnAkK83Eeadn8dE77Zflw" name="Annuler Création Contact" subject="_dpJTAK80Eeadn8dE77Zflw">
+      <extend xmi:id="_depEcK86Eeadn8dE77Zflw" extendedCase="_wezKYK80Eeadn8dE77Zflw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_TlACoK82Eeadn8dE77Zflw" name="Afficher Ecran &quot;Ajouter Contact&quot;" subject="_dpJTAK80Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0oDh8K84Eeadn8dE77Zflw" memberEnd="_0oK2sK84Eeadn8dE77Zflw _0oK2sa84Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_0oK2sK84Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_0oDh8K84Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_0oK2sa84Eeadn8dE77Zflw" type="_SGQeoK80Eeadn8dE77Zflw" association="_0oDh8K84Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3hw6AK84Eeadn8dE77Zflw" memberEnd="_3hw6Aa84Eeadn8dE77Zflw _3hw6Aq84Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_3hw6Aa84Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_3hw6AK84Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_3hw6Aq84Eeadn8dE77Zflw" type="_i6AvsK80Eeadn8dE77Zflw" association="_3hw6AK84Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_50X10K84Eeadn8dE77Zflw" memberEnd="_50X10a84Eeadn8dE77Zflw _50X10q84Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_50X10a84Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_50X10K84Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_50X10q84Eeadn8dE77Zflw" type="_kPAMsK80Eeadn8dE77Zflw" association="_50X10K84Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6rnm4K84Eeadn8dE77Zflw" memberEnd="_6rnm4a84Eeadn8dE77Zflw _6rnm4q84Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_6rnm4a84Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_6rnm4K84Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_6rnm4q84Eeadn8dE77Zflw" type="_lMCcsK80Eeadn8dE77Zflw" association="_6rnm4K84Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8LznQK84Eeadn8dE77Zflw" memberEnd="_8LznQa84Eeadn8dE77Zflw _8LznQq84Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_8LznQa84Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_8LznQK84Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_8LznQq84Eeadn8dE77Zflw" type="_lxc24K80Eeadn8dE77Zflw" association="_8LznQK84Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CydLIK85Eeadn8dE77Zflw" memberEnd="_CydLIa85Eeadn8dE77Zflw _CydLIq85Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_CydLIa85Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_CydLIK85Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_CydLIq85Eeadn8dE77Zflw" type="_mRoy0K80Eeadn8dE77Zflw" association="_CydLIK85Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OTFgQK86Eeadn8dE77Zflw" memberEnd="_OTGHUK86Eeadn8dE77Zflw _OTGHUa86Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_OTGHUK86Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_OTFgQK86Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_OTGHUa86Eeadn8dE77Zflw" type="_ooi_0K80Eeadn8dE77Zflw" association="_OTFgQK86Eeadn8dE77Zflw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P0TbYK86Eeadn8dE77Zflw" memberEnd="_P0UCcK86Eeadn8dE77Zflw _P0UpgK86Eeadn8dE77Zflw">
+    <ownedEnd xmi:id="_P0UCcK86Eeadn8dE77Zflw" type="_D43L0K80Eeadn8dE77Zflw" association="_P0TbYK86Eeadn8dE77Zflw"/>
+    <ownedEnd xmi:id="_P0UpgK86Eeadn8dE77Zflw" type="_OmnAkK83Eeadn8dE77Zflw" association="_P0TbYK86Eeadn8dE77Zflw"/>
+  </packagedElement>
+</uml:Model>
